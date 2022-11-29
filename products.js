@@ -30,5 +30,17 @@ function listar() {
     })
 }
 
+let categoria1 = "Escolar"
+let categoria2 = "Eletrônico"
 
 
+function listarProdutoPorCategoria(categoria) {
+    for(let i = 1 ; i < 4; i++) {
+        if(produtos[i].categoria == categoria){
+            console.log(produtos[i])
+        }
+    }
+}
+
+listarProdutoPorCategoria (categoria1)
+listarProdutoPorCategoria (categoria2)
