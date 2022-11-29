@@ -33,7 +33,6 @@ function listar() {
 let categoria1 = "Escolar"
 let categoria2 = "Eletrônico"
 
-
 function listarProdutoPorCategoria(categoria) {
     for(let i = 1 ; i < 4; i++) {
         if(produtos[i].categoria == categoria){
@@ -42,5 +41,18 @@ function listarProdutoPorCategoria(categoria) {
     }
 }
 
-listarProdutoPorCategoria (categoria1)
-listarProdutoPorCategoria (categoria2)
+listarProdutoPorCategoria(categoria1)
+listarProdutoPorCategoria(categoria2)
+
+// Questao 2
+
+function listarProdutoPorValor(min, max) {
+    for(let i = 0 ; i < 4; i++) {
+        if(produtos[i].valor <= max && produtos[i].valor >= min){
+            console.log(produtos[i])
+        }
+    }
+}
+
+listarProdutoPorValor(0,1000)
+listarProdutoPorValor(1000,2000)
